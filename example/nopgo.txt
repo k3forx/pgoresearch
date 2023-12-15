@@ -1,0 +1,26 @@
+goos: darwin
+goarch: amd64
+pkg: github.com/prattmic/markdown-pgo/load
+cpu: Intel(R) Core(TM) i9-9880H CPU @ 2.30GHz
+BenchmarkLoad-16    	    5732	    180090 ns/op
+BenchmarkLoad-16    	    6336	    172743 ns/op
+BenchmarkLoad-16    	    7014	    171740 ns/op
+BenchmarkLoad-16    	    7119	    170023 ns/op
+BenchmarkLoad-16    	    6909	    173041 ns/op
+BenchmarkLoad-16    	    6764	    181315 ns/op
+BenchmarkLoad-16    	    6969	    181871 ns/op
+BenchmarkLoad-16    	    6788	    188460 ns/op
+BenchmarkLoad-16    	    6392	    196119 ns/op
+BenchmarkLoad-16    	    6812	    182182 ns/op
+BenchmarkLoad-16    	    5751	    177702 ns/op
+BenchmarkLoad-16    	    6916	    173861 ns/op
+BenchmarkLoad-16    	    6621	    176949 ns/op
+BenchmarkLoad-16    	    6544	    171947 ns/op
+BenchmarkLoad-16    	    6978	    172966 ns/op
+BenchmarkLoad-16    	    6682	    171540 ns/op
+BenchmarkLoad-16    	    6742	    171764 ns/op
+BenchmarkLoad-16    	    6121	    172478 ns/op
+BenchmarkLoad-16    	    7086	    171335 ns/op
+BenchmarkLoad-16    	    7054	    172771 ns/op
+PASS
+ok  	github.com/prattmic/markdown-pgo/load	24.048s

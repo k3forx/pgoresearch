@@ -136,3 +136,53 @@ PGOが有効になっているかチェックする
 markdown.withpgo.exe: go1.21.5
         build   -pgo=/Users/kanata-miyahana/repos/output-docs/golang/pgo/example/default.pgo
 ```
+
+## 評価
+
+- ロードを生成するプログラムのベンチマークバージョンを使ってPGOの効果を見てみる
+
+PGOを有効にしてないサーバーを起動する
+
+```bash
+❯ ./markdown.nopgo.exe
+2023/12/14 21:13:10 Serving on post 8080...
+```
+
+別ターミナルを起動してベンチマークをとる
+
+```bash
+❯ go get github.com/prattmic/markdown-pgo@latest
+go: added github.com/prattmic/markdown-pgo v0.0.0-20230831075821-97e1a165aa5f
+
+❯ go test github.com/prattmic/markdown-pgo/load -bench=. -count=40 -source $(pwd)/README.test.md > nopgo.txt
+```
+
+次はPGOを有効したサーバーを起動する
+
+```bash
+❯ ./markdown.withpgo.exe
+2023/12/14 21:18:34 Serving on post 8080...
+```
+
+別ターミナルを起動してベンチマークをとる
+
+```bash
+❯ go test github.com/prattmic/markdown-pgo/load -bench=. -count=40 -source $(pwd)/README.test.md > withpgo.txt
+```
+
+### 結果を比較してみる
+
+```bash
+❯ go install golang.org/x/perf/cmd/benchstat@latest
+go: downloading golang.org/x/perf v0.0.0-20231127181059-b53752263861
+go: downloading github.com/aclements/go-moremath v0.0.0-20210112150236-f10218a38794
+
+❯ benchstat nopgo.txt withpgo.txt
+goos: darwin
+goarch: amd64
+pkg: github.com/prattmic/markdown-pgo/load
+cpu: Intel(R) Core(TM) i9-9880H CPU @ 2.30GHz
+        │  nopgo.txt  │            withpgo.txt             │
+        │   sec/op    │   sec/op     vs base               │
+Load-16   172.3µ ± 0%   172.9µ ± 1%  +0.36% (p=0.027 n=40)
+```
