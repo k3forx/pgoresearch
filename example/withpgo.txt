@@ -2,25 +2,45 @@ goos: darwin
 goarch: amd64
 pkg: github.com/prattmic/markdown-pgo/load
 cpu: Intel(R) Core(TM) i9-9880H CPU @ 2.30GHz
-BenchmarkLoad-16    	    6922	    172895 ns/op
-BenchmarkLoad-16    	    7150	    173203 ns/op
-BenchmarkLoad-16    	    6054	    174888 ns/op
-BenchmarkLoad-16    	    6994	    171624 ns/op
-BenchmarkLoad-16    	    6753	    172068 ns/op
-BenchmarkLoad-16    	    6962	    174108 ns/op
-BenchmarkLoad-16    	    6865	    177132 ns/op
-BenchmarkLoad-16    	    6207	    177856 ns/op
-BenchmarkLoad-16    	    6714	    178610 ns/op
-BenchmarkLoad-16    	    6237	    178317 ns/op
-BenchmarkLoad-16    	    7263	    180551 ns/op
-BenchmarkLoad-16    	    6991	    182599 ns/op
-BenchmarkLoad-16    	    6859	    183135 ns/op
-BenchmarkLoad-16    	    6792	    193230 ns/op
-BenchmarkLoad-16    	    6334	    193994 ns/op
-BenchmarkLoad-16    	    7084	    191937 ns/op
-BenchmarkLoad-16    	    6655	    180980 ns/op
-BenchmarkLoad-16    	    6938	    177966 ns/op
-BenchmarkLoad-16    	    6759	    177799 ns/op
-BenchmarkLoad-16    	    6807	    176763 ns/op
+BenchmarkLoad-16    	    6639	    184652 ns/op
+BenchmarkLoad-16    	    6048	    193888 ns/op
+BenchmarkLoad-16    	    5992	    186292 ns/op
+BenchmarkLoad-16    	    6924	    173801 ns/op
+BenchmarkLoad-16    	    7378	    174397 ns/op
+BenchmarkLoad-16    	    6669	    174574 ns/op
+BenchmarkLoad-16    	    6345	    170883 ns/op
+BenchmarkLoad-16    	    7016	    170611 ns/op
+BenchmarkLoad-16    	    7218	    170035 ns/op
+BenchmarkLoad-16    	    7294	    171758 ns/op
+BenchmarkLoad-16    	    6669	    171428 ns/op
+BenchmarkLoad-16    	    6130	    171354 ns/op
+BenchmarkLoad-16    	    6894	    172142 ns/op
+BenchmarkLoad-16    	    6951	    173935 ns/op
+BenchmarkLoad-16    	    6618	    171588 ns/op
+BenchmarkLoad-16    	    6856	    173002 ns/op
+BenchmarkLoad-16    	    6963	    172506 ns/op
+BenchmarkLoad-16    	    6780	    171581 ns/op
+BenchmarkLoad-16    	    7227	    171628 ns/op
+BenchmarkLoad-16    	    7186	    171454 ns/op
+BenchmarkLoad-16    	    6619	    171317 ns/op
+BenchmarkLoad-16    	    6878	    174371 ns/op
+BenchmarkLoad-16    	    6850	    171955 ns/op
+BenchmarkLoad-16    	    6572	    172113 ns/op
+BenchmarkLoad-16    	    6930	    174072 ns/op
+BenchmarkLoad-16    	    6853	    173510 ns/op
+BenchmarkLoad-16    	    6931	    172954 ns/op
+BenchmarkLoad-16    	    7004	    172405 ns/op
+BenchmarkLoad-16    	    6879	    172542 ns/op
+BenchmarkLoad-16    	    6975	    174714 ns/op
+BenchmarkLoad-16    	    7024	    176110 ns/op
+BenchmarkLoad-16    	    6884	    173224 ns/op
+BenchmarkLoad-16    	    6771	    173611 ns/op
+BenchmarkLoad-16    	    7089	    172164 ns/op
+BenchmarkLoad-16    	    6735	    173782 ns/op
+BenchmarkLoad-16    	    7129	    174112 ns/op
+BenchmarkLoad-16    	    6678	    172951 ns/op
+BenchmarkLoad-16    	    6864	    173154 ns/op
+BenchmarkLoad-16    	    7078	    175453 ns/op
+BenchmarkLoad-16    	    6945	    173319 ns/op
 PASS
-ok  	github.com/prattmic/markdown-pgo/load	25.672s
+ok  	github.com/prattmic/markdown-pgo/load	50.428s

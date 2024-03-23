@@ -5,6 +5,7 @@ go 1.21.5
 require gitlab.com/golang-commonmark/markdown v0.0.0-20211110145824-bf3e522c626a
 
 require (
+	github.com/prattmic/markdown-pgo v0.0.0-20230831075821-97e1a165aa5f // indirect
 	gitlab.com/golang-commonmark/html v0.0.0-20191124015941-a22733972181 // indirect
 	gitlab.com/golang-commonmark/linkify v0.0.0-20191026162114-a0c2df6c8f82 // indirect
 	gitlab.com/golang-commonmark/mdurl v0.0.0-20191124015652-932350d1cb84 // indirect
